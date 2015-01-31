@@ -6,7 +6,7 @@
   "activationCommands": {
     "atom-workspace": "go-rename:toggle"
   },
-  "repository": "https://github.com/atom/go-rename",
+  "repository": "https://github.com/redefiance/atom-go-rename",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
