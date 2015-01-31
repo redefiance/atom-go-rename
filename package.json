@@ -1,0 +1,18 @@
+{
+  "name": "go-rename",
+  "main": "./lib/go-rename",
+  "version": "0.0.0",
+  "description": "Rename identifiers in Go code via the gorename command line tool",
+  "activationCommands": {
+    "atom-workspace": "go-rename:toggle"
+  },
+  "repository": "https://github.com/atom/go-rename",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3",
+    "notifications": "^0"
+  }
+}
