@@ -1,11 +1,9 @@
 # go-rename package
-Rename identifiers in Go code via the gorename command line tool
+Rename identifiers in golang code via the gorename command line tool
 
-## Install
+## Install gorename
 
-Install gorename:
-
-  go get -v golang.org/x/tools/cmd/gorename
+go get -v golang.org/x/tools/cmd/gorename
 
 ## Usage
 
