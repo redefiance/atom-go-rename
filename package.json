@@ -1,7 +1,7 @@
 {
   "name": "go-rename",
   "main": "./lib/go-rename",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Rename identifiers in golang code via the gorename command line tool",
   "repository": "https://github.com/redefiance/atom-go-rename",
   "license": "MIT",
