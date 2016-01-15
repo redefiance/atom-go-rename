@@ -56,7 +56,7 @@ class GoRenameView extends View
         @result = output
       exit = (code)=>
         if code == 0
-          atom.notifications.addSuccess @result
+          atom.notifications.addSuccess "Success"
         else
           atom.notifications.addError @result
       process = new BufferedProcess({command, args, stderr, exit})
