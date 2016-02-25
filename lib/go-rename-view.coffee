@@ -52,11 +52,14 @@ class GoRenameView extends View
     if text.length > 0
       command = atom.config.get 'go-rename.path'
       args = ['-offset', "#{@filePath}:##{@byteOffset}", '-to', text]
-      stderr = (output)=>
-        @result = output
-      exit = (code)=>
+
+      result = []
+      stdout = (output) =>
+        result.push(output)
+
+      exit = (code) =>
         if code == 0
-          atom.notifications.addSuccess @result
+          atom.notifications.addSuccess result.join('')
         else
-          atom.notifications.addError @result
-      process = new BufferedProcess({command, args, stderr, exit})
+          atom.notifications.addError result.join('')
+      process = new BufferedProcess({command, args, stdout, stderr: stdout, exit})
